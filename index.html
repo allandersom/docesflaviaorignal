@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavinha Doces - Delícias Artesanais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="header-content">
+                <div class="logo-box">
+                    <h1>Flavinha Doces</h1>
+                </div>
+                <p class="slogan">Delícias artesanais feitas com amor</p>
+            </div>
+        </header>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#cardapio" class="nav-link">Cardápio</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <main id="content">
+            <!-- Conteúdo dinâmico será injetado aqui -->
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <p>Flavinha Doces - Doces artesanais com amor</p>
+                <p>Telefone: (81) 99305-5506</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Templates das páginas -->
+    <template id="home-template">
+        <section class="banner">
+            <div class="banner-text">
+                <h2>Doces que encantam</h2>
+                <p>Experimente nossas delícias feitas com ingredientes selecionados e muito carinho</p>
+                <a href="#cardapio" class="btn">Conheça nossos produtos</a>
+            </div>
+        </section>
+        
+        <section class="destaques container">
+            <h2 class="section-title">Nossos Destaques</h2>
+            <div class="destaques-grid">
+                <div class="destaque-card">
+                    <img src="redvelvet.jpg" alt="Bolo Red Velvet" class="produto-img">
+                    <div class="destaque-info">
+                        <h3>Bolo Red Velvet</h3>
+                        <p>Nosso bolo mais pedido com cream cheese</p>
+                        <span class="preco">R$ 120,00</span>
+                    </div>
+                </div>
+                <div class="destaque-card">
+                    <img src="cupcake.jpg" alt="Cupcake Especial" class="produto-img">
+                    <div class="destaque-info">
+                        <h3>Cupcake Especial</h3>
+                        <p>Com cobertura de ganache e frutas vermelhas</p>
+                        <span class="preco">R$ 8,00</span>
+                    </div>
+                </div>
+                <div class="destaque-card">
+                    <img src="brigadeiro.jpg" alt="Brigadeiro Gourmet" class="produto-img">
+                    <div class="destaque-info">
+                        <h3>Brigadeiro Gourmet</h3>
+                        <p>Tradicional com toque de flor de sal</p>
+                        <span class="preco">R$ 4,00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="cardapio-template">
+        <section class="cardapio container">
+            <h2 class="section-title">Nosso Cardápio</h2>
+            <div class="produtos-grid">
+                <div class="produto-card">
+                    <img src="bolo de chocolate.jpg" alt="Bolo de Chocolate" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Bolo de Chocolate</h3>
+                        <p>Bolo macio com recheio de brigadeiro</p>
+                        <span class="preco">R$ 80,00</span>
+                        <button class="btn btn-small pedir-agora">Pedir agora</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="bolo de cenoura.jpg" alt="Bolo de Cenoura" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Bolo de Cenoura</h3>
+                        <p>Com cobertura de chocolate e nozes</p>
+                        <span class="preco">R$ 90,00</span>
+                        <button class="btn btn-small pedir-agora">Pedir agora</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="beijinho.png" alt="Beijinho" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Beijinho</h3>
+                        <p>Doce de coco com leite condensado</p>
+                        <span class="preco">R$ 3,50</span>
+                        <button class="btn btn-small pedir-agora">Pedir agora</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="trufas.jpg" alt="Trufas" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Trufas</h3>
+                        <p>Chocolate meio amargo com recheio cremoso</p>
+                        <span class="preco">R$ 5,00</span>
+                        <button class="btn btn-small pedir-agora">Pedir agora</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="torta de limão.jpg" alt="Torta de Limão" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Torta de Limão</h3>
+                        <p>Crocante com recheio cremoso</p>
+                        <span class="preco">R$ 25,00 (fatia)</span>
+                        <button class="btn btn-small pedir-agora">Pedir agora</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="contato-template">
+        <section class="contato-section">
+            <div class="container">
+                <h2 class="section-title">Faça seu pedido</h2>
+                <div class="contato-info">
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Endereço:</strong> Rua Quipapá, 21 - Paratibe</p>
+                    <p><i class="fas fa-clock"></i> <strong>Horário:</strong> Segunda a Sexta, 9h às 17h</p>
+                    <p><i class="fas fa-phone"></i> <strong>Telefone:</strong> (81) 99305-5506</p>
+                    
+                    <div class="whatsapp-btn">
+                        <a href="https://wa.me/5581993055506" class="btn" target="_blank">
+                            Fale conosco pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <script src="app.js"></script>
+</body>
+</html>
